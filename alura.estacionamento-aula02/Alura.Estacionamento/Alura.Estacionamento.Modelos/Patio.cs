@@ -99,7 +99,6 @@ namespace Alura.Estacionamento.Modelos
                                select veiculo).SingleOrDefault();
 
             veiculoTemp.AlterarDados(veiculoAlterado);
-            veiculoTemp.AlterarDados(veiculoAlterado);
 
             return veiculoTemp;
         }
