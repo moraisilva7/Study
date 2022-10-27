@@ -7,9 +7,9 @@ namespace Alura.Estacionamento.Modelos
 {
     public class Veiculo
     {
-        //Campos 
+        //Campos
         private string _placa;
-        private string _proprietario;        
+        private string _proprietario;
         private TipoVeiculo _tipo;
 
         //Propriedades
@@ -61,9 +61,9 @@ namespace Alura.Estacionamento.Modelos
         /// Framework, entre outros benefícios.
         /// </summary>
         public string Cor { get; set; }
-        public double Largura { get; set; }    
+        public double Largura { get; set; }
         public double VelocidadeAtual { get; set; }
-        public string Modelo { get; set; }        
+        public string Modelo { get; set; }
         public string Proprietario
         {
             get
@@ -81,7 +81,7 @@ namespace Alura.Estacionamento.Modelos
 
         }
         public DateTime HoraEntrada { get; set; }
-        public DateTime HoraSaida { get; set; }   
+        public DateTime HoraSaida { get; set; }
         public TipoVeiculo Tipo { get => _tipo; set => _tipo = value; }
 
         //Métodos
@@ -121,7 +121,7 @@ namespace Alura.Estacionamento.Modelos
         }
         public Veiculo(string proprietario)
         {
-           Proprietario = proprietario;
+            Proprietario = proprietario;
         }
 
 

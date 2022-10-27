@@ -1,4 +1,4 @@
-using Alura.Estacionamento.Modelos;
+﻿using Alura.Estacionamento.Modelos;
 using System;
 using System.Collections.Generic;
 using Xunit;
@@ -16,7 +16,6 @@ namespace Alura.Estacionamento.Tests
             var veiculo = new Veiculo();
             veiculo.Proprietario = "André Silva";
             veiculo.Placa = "ABC-0101";
-            veiculo.Cor = "Azul";
             veiculo.Modelo = "Fusca";
             veiculo.Acelerar(10);
             veiculo.Frear(5);
@@ -38,9 +37,9 @@ namespace Alura.Estacionamento.Tests
         [InlineData("André Silva", "QWZ-5154", "Verde", "Santana")]
         [InlineData("André Silva", "PLU-8472", "Branco", "Logan")]
         public void ValidaFaturamentoComVariosVeiculosNoPatio(string proprietario,
-                                                     string placa,
-                                                     string cor,
-                                                     string modelo)
+                                                        string placa,
+                                                        string cor,
+                                                        string modelo)
         {
             //Arranje
             Patio estacionamento = new Patio();
@@ -88,6 +87,6 @@ namespace Alura.Estacionamento.Tests
         }
 
 
-        
+
     }
 }
