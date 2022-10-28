@@ -11,7 +11,7 @@ namespace Alura.Estacionamento.Tests
 
         [Fact(DisplayName = "Teste n°1")]
         [Trait("Funcionalidade", "Acelerar")]
-        public void TestaVeiculoAcelerar()
+        public void TestaVeiculoAcelerarComParametro10()
         {
             //Arrange
             var veiculo = new Veiculo();
@@ -26,7 +26,7 @@ namespace Alura.Estacionamento.Tests
 
         [Fact(DisplayName = "Teste n°2")]
         [Trait("Funcionalidade", "Frear")]
-        public void TestaVeiculoFrear()
+        public void TestaVeiculoFrearComParametro10()
         {
             //Arrange
             var veiculo = new Veiculo();
@@ -71,7 +71,7 @@ namespace Alura.Estacionamento.Tests
         }
 
         [Fact]
-        public void DadosVeiculo()
+        public void FichaDeInformacaoDoVeiculo()
         {
             //Arrange
             var veiculo = new Veiculo();
